@@ -10,7 +10,7 @@ router.get("/compt_fidelite/:code", fedilityController.getFedilityAccountData);
 // get compt fidelite by numcin
 
 router.get(
-  "/compt_fidelite/:numcin",
+  "/compt_fidelite_cin/:numcin",
   fedilityCinController.getFedilityAccountDataByCIN
 );
 

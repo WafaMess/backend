@@ -18,7 +18,7 @@ const pool = new Pool({
   password: "wafapostgres",
   port: 5432,
 });
-
+app.use(require("./routes/productCod.router"));
 // product router
 app.use(require("./routes/products.router"));
 // promoCode router
@@ -33,7 +33,8 @@ app.use(require("./routes/postalCode.router"));
 app.use(require("./routes/admin.router"));
 // led router
 app.use(require("./routes/led.router"));
-
+//print
+app.use(require("./routes/print.routes"));
 // get product By Name
 // app.get("/products/:nom", async (req, res, next) => {
 //   try {

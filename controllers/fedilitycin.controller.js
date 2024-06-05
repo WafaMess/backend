@@ -7,6 +7,8 @@ const getFedilityAccountDataByCIN = async (req, res, next) => {
       "SELECT * FROM compt_fidelite WHERE numcin=$1",
       [`${numcin}`]
     );
+    console.log(Number(numcin));
+    console.log(fidelityResult.rows);
     if (fidelityResult.rows.length == 0) {
       res.json({
         status: false,
