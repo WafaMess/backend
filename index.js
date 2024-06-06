@@ -34,7 +34,7 @@ app.use(require("./routes/admin.router"));
 // led router
 app.use(require("./routes/led.router"));
 //print
-app.use(require("./routes/print.routes"));
+app.use(require("./routes/printTicket.router"));
 // get product By Name
 // app.get("/products/:nom", async (req, res, next) => {
 //   try {
